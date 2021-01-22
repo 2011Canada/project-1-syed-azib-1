@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="project-1-syed-azib:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>project-1-syed-azib</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="project-1-syed-azib-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="project-1-syed-azib:war exploded" />
+    </root>
+  </artifact>
+</component>

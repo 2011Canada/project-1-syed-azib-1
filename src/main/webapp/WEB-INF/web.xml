@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+    <display-name>syed-azib-project-1</display-name>
+    <welcome-file-list>
+        <welcome-file>login.html</welcome-file>
+        <welcome-file>login.htm</welcome-file>
+        <welcome-file>login.jsp</welcome-file>
+        <welcome-file>default.html</welcome-file>
+        <welcome-file>default.htm</welcome-file>
+        <welcome-file>default.jsp</welcome-file>
+    </welcome-file-list>
+    <servlet>
+        <description></description>
+        <display-name>AJAXServlet</display-name>
+        <servlet-name>AJAXServlet</servlet-name>
+        <servlet-class>servlets.AJAXServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AJAXServlet</servlet-name>
+        <url-pattern>/getAccount</url-pattern>
+        <url-pattern>/doCreateReimbursement</url-pattern>
+        <url-pattern>/doResolveReimbursement</url-pattern>
+        <url-pattern>/getAllReimbursements</url-pattern>
+        <url-pattern>/getApprovedReimbursements</url-pattern>
+        <url-pattern>/getDeniedReimbursements</url-pattern>
+        <url-pattern>/getPendingReimbursements</url-pattern>
+        <url-pattern>/getEmployeeReimbursements</url-pattern>
+        <url-pattern>/logout</url-pattern>
+        <url-pattern>/getSessionType</url-pattern>
+
+    </servlet-mapping>
+    <servlet>
+        <description></description>
+        <display-name>ForwardingServlet</display-name>
+        <servlet-name>ForwardingServlet</servlet-name>
+        <servlet-class>servlets.ForwardingServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ForwardingServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+        <url-pattern>/createAccount</url-pattern>
+        <url-pattern>/employee</url-pattern>
+        <url-pattern>/managerViewAll</url-pattern>
+        <url-pattern>/managerViewApproved</url-pattern>
+        <url-pattern>/managerViewDenied</url-pattern>
+        <url-pattern>/managerViewPending</url-pattern>
+    </servlet-mapping>
+</web-app>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Welcome Manager!</title>
+    <style>
+        body {
+            background-color: #CBE8FA;
+            background-size: cover;
+        }
+        #incomplete {
+            color: red;
+            font-style:italic
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg" style="background-color: #1A3A4B; color: #E9F1F6">
+    <h1 class="navbar-brand mx-auto" style="padding-left: 50px;">Welcome Manager!</h1>
+    <button class="btn btn-primary float-sm-right" id="logout">Logout</button>
+</nav>
+<div class="container" id="container">
+    <div class="row justify-content-center">
+        <div class="col-12 justify_content-center">
+            <table class="table" style="border-bottom: 5px solid white;">
+                <thead>
+                <tr>
+                    <th>ReimbursementID</th>
+                    <th>AuthorID</th>
+                    <th>Amount</th>
+                    <th>SubmittedAt</th>
+                    <th>ResolvedAt&nbsp</th>
+                    <th>Description</th>
+                    <th>Status</th>
+                    <th>Type</th>
+                </tr>
+                </thead>
+                <tbody  id="allReimbursements">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-6 justify_content-center">
+            <div>
+                <button style=" background-color: #1A3A4B; color: #E9F1F6" id="btnViewApproved" class="btn btn-primary container" >View Approved</button>
+            </div>
+            <br>
+            <div>
+                <button  style=" background-color: #1A3A4B; color: #E9F1F6" id="btnViewDenied" class="btn btn-primary container">View Denied</button>
+            </div>
+            <br>
+            <div>
+                <button  style=" background-color: #1A3A4B; color: #E9F1F6" id="btnViewPending" class="btn btn-primary container">View Pending</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="/js/managerViewAll.js"></script>
+</body>
+</html>
